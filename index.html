@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Phone dialer</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+
+    <!-- CSS and JavaScript -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/af5f36b0d7.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <section id="phonedailer" style="text-align: center">
+
+      <h2>Phone Dailer</h2>
+
+      <div class="maindiv ml-auto mr-auto">
+        <div class="card"  >
+          <div class="card-header">
+              <h3 id="result"></h3>
+          </div>
+          <div class="card-body ">
+            <div class="row">
+              <div class="col-lg-4">
+                    <button type="button" class="btn btn-light btn-lg btn-block" name="1" value="1">
+                      <h3>1</h3>
+                      <p>&nbsp;</p>
+                    </button>
+              </div>
+              <div class="col-lg-4">
+                    <button type="button" class="btn btn-light btn-lg btn-block" name="2" value="2">
+                      <h3>2</h3>
+                      <p>ABC</p>
+                    </button>
+              </div>
+              <div class="col-lg-4">
+                  <button type="button" class="btn btn-light btn-lg btn-block" name="3" value="3">
+                    <h3>3</h3>
+                    <p>DEF</p>
+                  </button>
+              </div>
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-light btn-lg btn-block" name="4" value="4">
+                  <h3>4</h3>
+                  <p>GHI</p>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-light btn-lg btn-block" name="5" value="5">
+                  <h3>5</h3>
+                  <p>JKL</p>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-light btn-lg btn-block" name="6" value="6">
+                  <h3>6</h3>
+                  <p>MNO</p>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-light btn-lg btn-block" name="7" value="7">
+                  <h3>7</h3>
+                  <p>PQRS</p>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-light btn-lg btn-block" name="8" value="8">
+                  <h3>8</h3>
+                  <p>TUV</p>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-light btn-lg btn-block" name="9" value="9">
+                  <h3>9</h3>
+                  <p>WXYZ</p>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-light btn-lg btn-block" name="*" value="*">
+                  <h3>*</h3>
+                  <p>&nbsp;</p>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-light btn-lg btn-block" name="0" value="0">
+                  <h3>0</h3>
+                  <p>&nbsp;</p>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-light btn-lg btn-block" name="#" value="#">
+                    <h3>#</h3>
+                    <p>&nbsp;</p>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-light btn-lg btn-block" value="menu">
+                  <i class="far fa-star"></i>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-success btn-lg btn-block" value="call" >
+                  <i class="fas fa-phone-alt"></i>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <button type="button" class="btn btn-light btn-lg btn-block" name="back" value="back">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <script src="js/index.js" charset="utf-8"></script>
+  </body>
+</html>
